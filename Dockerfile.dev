@@ -1,0 +1,9 @@
+FROM nginx:alpine
+
+COPY conf/nginx /etc/nginx
+
+COPY index.dev.html /var/www/public/index.html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

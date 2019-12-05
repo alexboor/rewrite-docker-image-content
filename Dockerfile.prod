@@ -1,0 +1,3 @@
+FROM nginx:qa
+
+COPY index.prod.html /var/www/public/index.html

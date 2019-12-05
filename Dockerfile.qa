@@ -1,0 +1,4 @@
+FROM nginx:dev
+
+COPY index.qa.html /var/www/public/index.html
+
